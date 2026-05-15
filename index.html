@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HQCharge | Shipping & Smart Deals</title>
+
+<meta name="description" content="أفضل منصة للشحن من الصين والعروض العالمية والمنتجات التقنية">
+<meta name="keywords" content="شحن من الصين, شحن الجزائر, شحن السعودية, منتجات ذكية, Affiliate">
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Cairo',sans-serif;
+}
+
+body{
+background:#050816;
+color:white;
+overflow-x:hidden;
+line-height:1.8;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,0.5);
+backdrop-filter:blur(10px);
+z-index:999;
+}
+
+.logo{
+font-size:32px;
+font-weight:800;
+background:linear-gradient(90deg,#00d0ff,#8a2eff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 12px;
+font-weight:700;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:120px 20px;
+background:
+radial-gradient(circle at top left,#8a2eff44,transparent 30%),
+radial-gradient(circle at bottom right,#00d0ff33,transparent 30%),
+#050816;
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.hero h1{
+font-size:65px;
+margin-bottom:20px;
+line-height:1.2;
+}
+
+.gradient{
+background:linear-gradient(90deg,#00d0ff,#8a2eff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+font-size:22px;
+color:#ccc;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+background:linear-gradient(90deg,#00d0ff,#8a2eff);
+color:white;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+.section{
+padding:100px 8%;
+}
+
+.section-title{
+font-size:45px;
+text-align:center;
+margin-bottom:60px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+border-radius:25px;
+overflow:hidden;
+backdrop-filter:blur(12px);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px rgba(0,208,255,0.3);
+}
+
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.card-content{
+padding:25px;
+}
+
+.card h3{
+margin-bottom:15px;
+font-size:24px;
+}
+
+.card p{
+color:#bbb;
+margin-bottom:20px;
+}
+
+.buy-btn{
+display:inline-block;
+padding:12px 25px;
+border-radius:40px;
+background:linear-gradient(90deg,#00d0ff,#8a2eff);
+color:white;
+text-decoration:none;
+font-weight:700;
+border:none;
+cursor:pointer;
+}
+
+.blog{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.article{
+background:rgba(255,255,255,0.05);
+padding:30px;
+border-radius:25px;
+backdrop-filter:blur(10px);
+transition:0.3s;
+}
+
+.article:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px rgba(0,208,255,0.2);
+}
+
+.article h3{
+margin-bottom:15px;
+font-size:26px;
+}
+
+.article p{
+color:#bbb;
+margin-bottom:20px;
+}
+
+.newsletter{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.newsletter input{
+padding:15px;
+border:none;
+border-radius:50px;
+width:320px;
+}
+
+.newsletter button{
+padding:15px 30px;
+border:none;
+border-radius:50px;
+background:linear-gradient(90deg,#00d0ff,#8a2eff);
+color:white;
+font-weight:700;
+cursor:pointer;
+}
+
+.dashboard{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.box{
+background:#101528;
+padding:30px;
+border-radius:20px;
+text-align:center;
+font-size:24px;
+font-weight:700;
+}
+
+.contact{
+text-align:center;
+font-size:20px;
+line-height:2;
+}
+
+footer{
+padding:40px;
+text-align:center;
+background:#02040b;
+color:#777;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.section-title{
+font-size:34px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">HQCharge</div>
+
+<nav>
+<a href="#products">Products</a>
+<a href="#blog">Blog</a>
+<a href="#dashboard">Dashboard</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+أفضل منصة
+<span class="gradient">
+للشحن والعروض العالمية
+</span>
+</h1>
+
+<p>
+مقالات احترافية عن الشحن من الصين + منتجات ذكية وروابط أفلييت احترافية.
+</p>
+
+<a href="#blog" class="btn">
+قراءة المقالات
+</a>
+
+</div>
+
+</section>
+
+<section class="section" id="products">
+
+<h2 class="section-title">
+Trending Products
+</h2>
+
+<div class="products">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card-content">
+
+<h3>AI Smart Watch</h3>
+
+<p>
+ساعة ذكية احترافية مطلوبة عالميًا.
+</p>
+
+<a class="buy-btn"
+href="https://affiliate-program.amazon.com"
+target="_blank">
+Amazon Deal
+</a>
+
+</div>
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card-content">
+
+<h3>Gaming Smartphone</h3>
+
+<p>
+هاتف قوي للألعاب والتصوير.
+</p>
+
+<a class="buy-btn"
+href="https://portals.aliexpress.com"
+target="_blank">
+AliExpress Deal
+</a>
+
+</div>
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card-content">
+
+<h3>Wireless Headphones</h3>
+
+<p>
+سماعات احترافية بتقنيات AI.
+</p>
+
+<a class="buy-btn"
+href="https://www.shopify.com/affiliates"
+target="_blank">
+Shopify Offers
+</a>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="blog">
+
+<h2 class="section-title">
+SEO Blog Articles
+</h2>
+
+<div class="blog">
+
+<div class="article">
+
+<h3>شحن من الصين إلى الجزائر</h3>
+
+<p>
+تعرف على أفضل طرق الشحن الجوي والبحري إلى الجزائر مع مقارنة شركات الشحن العالمية.
+</p>
+
+<button class="buy-btn"
+onclick="openArticle(
+'شحن من الصين إلى الجزائر',
+`<h2>شحن من الصين إلى الجزائر</h2>
+
+<p>
+إذا كنت تبحث عن شحن من الصين إلى الجزائر فهذا الدليل يساعدك على اختيار أفضل طريقة شحن.
+</p>
+
+<h3>أنواع الشحن</h3>
+
+<ul>
+<li>الشحن الجوي السريع.</li>
+<li>الشحن البحري للحاويات.</li>
+<li>شحن اقتصادي للتجار.</li>
+</ul>
+
+<h3>أفضل الشركات</h3>
+
+<p>
+DHL و FedEx و UPS تعتبر من أقوى الشركات العالمية.
+</p>
+
+<p>
+مدة الشحن تختلف حسب الوزن وطريقة النقل والجمارك الجزائرية.
+</p>`
+)">
+قراءة المقال
+</button>
+
+</div>
+
+<div class="article">
+
+<h3>شحن من الصين إلى السعودية</h3>
+
+<p>
+دليل عملي للاستيراد إلى السعودية مع نصائح الجمارك والتخليص.
+</p>
+
+<button class="buy-btn"
+onclick="openArticle(
+'شحن من الصين إلى السعودية',
+`<h2>شحن من الصين إلى السعودية</h2>
+
+<p>
+يمكنك الشحن إلى السعودية عبر الشحن الجوي أو البحري حسب حجم البضائع.
+</p>
+
+<h3>الشحن الجوي</h3>
+
+<p>
+سريع لكنه أعلى تكلفة.
+</p>
+
+<h3>الشحن البحري</h3>
+
+<p>
+مناسب للحاويات والكميات الكبيرة.
+</p>
+
+<p>
+يفضل دائمًا التأكد من قوانين الجمارك السعودية قبل الاستيراد.
+</p>`
+)">
+قراءة المقال
+</button>
+
+</div>
+
+<div class="article">
+
+<h3>شحن من الصين إلى الإمارات</h3>
+
+<p>
+أفضل شركات الشحن إلى الإمارات وأسعار الشحن التقريبية.
+</p>
+
+<button class="buy-btn"
+onclick="openArticle(
+'شحن من الصين إلى الإمارات',
+`<h2>شحن من الصين إلى الإمارات</h2>
+
+<p>
+الإمارات من أفضل الدول للاستيراد بسبب سهولة الإجراءات.
+</p>
+
+<h3>أفضل الشركات</h3>
+
+<ul>
+<li>DHL</li>
+<li>FedEx</li>
+<li>UPS</li>
+</ul>
+
+<p>
+يمكنك استخدام الشحن البحري للكميات الكبيرة والجوي للبضائع السريعة.
+</p>`
+)">
+قراءة المقال
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Email Marketing
+</h2>
+
+<form class="newsletter">
+
+<input type="email" placeholder="Enter Your Email">
+
+<button>
+Subscribe
+</button>
+
+</form>
+
+</section>
+
+<section class="section" id="dashboard">
+
+<h2 class="section-title">
+Admin Dashboard
+</h2>
+
+<div class="dashboard">
+
+<div class="box">
+Visitors: 12,500
+</div>
+
+<div class="box">
+Affiliate Clicks: 4,320
+</div>
+
+<div class="box">
+Revenue: $2,420
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="contact">
+
+<h2 class="section-title">
+Contact
+</h2>
+
+<div class="contact">
+
+<p>Email: contact@hqcharge.com</p>
+
+<p>Website: hqcharge.com</p>
+
+<p>Country: Algeria</p>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 HQCharge - All Rights Reserved
+
+</footer>
+
+<script>
+
+function openArticle(title, content){
+
+const articleWindow = window.open("", "_blank");
+
+articleWindow.document.write(`
+
+<html dir="rtl">
+
+<head>
+
+<title>${title}</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+background:#050816;
+color:white;
+font-family:'Cairo',sans-serif;
+padding:50px;
+line-height:2;
+max-width:900px;
+margin:auto;
+}
+
+h1,h2,h3{
+margin-bottom:20px;
+color:#00d0ff;
+}
+
+p{
+margin-bottom:20px;
+font-size:20px;
+color:#ddd;
+}
+
+ul{
+margin:20px;
+}
+
+li{
+margin-bottom:10px;
+font-size:19px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>${title}</h1>
+
+${content}
+
+</body>
+
+</html>
+
+`);
+
+}
+
+</script>
+
+</body>
+</html>
