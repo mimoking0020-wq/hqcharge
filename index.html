@@ -113,13 +113,36 @@ padding:100px 8%;
 .section-title{
 font-size:45px;
 text-align:center;
-margin-bottom:60px;
+margin-bottom:20px;
+}
+
+.section-desc{
+max-width:760px;
+margin:0 auto 45px;
+font-size:20px;
+color:#bbb;
+line-height:1.8;
+text-align:center;
 }
 
 .products{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:30px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+margin-top:40px;
+}
+
+.gallery img{
+width:100%;
+border-radius:25px;
+object-fit:cover;
+height:320px;
 }
 
 .card{
@@ -172,211 +195,7 @@ display:grid;
 grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 gap:30px;
 }
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
 
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>روبوت تنظيف ذكي 2 في 1 بقدرة شفط 6000PA</title>
-
-<style>
-
-body{
-    margin:0;
-    padding:0;
-    font-family:Tahoma, Arial, sans-serif;
-    background:#f4f7fb;
-    color:#222;
-    line-height:1.9;
-}
-
-.container{
-    max-width:950px;
-    margin:40px auto;
-    background:#fff;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 5px 25px rgba(0,0,0,0.08);
-}
-
-.hero img{
-   vacuum-1.jpg
-vacuum-2.jpg
-vacuum-3.jpg
-vacuum-4.jpg
-}
-
-.content{
-    padding:35px;
-}
-
-h1{
-    color:#0b5ed7;
-    font-size:40px;
-    margin-bottom:20px;
-    line-height:1.5;
-}
-.features{
-    background:#f1f6ff;
-    padding:25px;
-    border-radius:15px;
-    margin-bottom:30px;
-}
-
-.features h2{
-    color:#0b5ed7;
-    margin-bottom:15px;
-}
-
-.features ul{
-    margin:0;
-    padding-right:20px;
-}
-
-.features li{
-    margin-bottom:12px;
-    font-size:18px;
-}
-
-.short-box{
-    background:#fafafa;
-    border:1px solid #eee;
-    padding:20px;
-    border-radius:15px;
-    margin-bottom:35px;
-    font-size:18px;
-}
-
-.buy-section{
-    text-align:center;
-}
-
-.buy-btn{
-    display:inline-block;
-    background:#0b5ed7;
-    color:#fff;
-    text-decoration:none;
-    padding:18px 40px;
-    font-size:24px;
-    border-radius:14px;
-    transition:0.3s;
-    font-weight:bold;
-}
-
-.buy-btn:hover{
-    background:#084298;
-    transform:scale(1.03);
-}
-
-.footer{
-    text-align:center;
-    padding:20px;
-    color:#777;
-    font-size:15px;
-}
-
-@media(max-width:768px){
-
-    .content{
-        padding:20px;
-    }
-
-    h1{
-        font-size:30px;
-    }
-
-    .description{
-        font-size:18px;
-    }
-
-    .buy-btn{
-        width:100%;
-        box-sizing:border-box;
-    }
-
-}
-
-</style>
-</head>
-
-<body>
-
-<div class="container">
-
-    <div class="hero">
-        <img src="https://images.unsplash.com/photo-1589923188900-85dae523342b?q=80&w=1200&auto=format&fit=crop" alt="روبوت تنظيف ذكي">
-    </div>
-
-    <div class="content">
-
-        <h1>
-            روبوت تنظيف ذكي 2 في 1 بقدرة شفط 6000PA
-        </h1>
-
-        <div class="description">
-
-            روبوت تنظيف ذكي 2 في 1 مع كنس ومسح، بقوة شفط تصل إلى 6000PA لتنظيف عميق وفعّال للأتربة، الغبار، وشعر الحيوانات الأليفة.
-
-            يتميز بتقنية WiFi والتحكم الصوتي لسهولة الاستخدام، مع خاصية إعادة الشحن التلقائي ليعود إلى القاعدة عند انخفاض البطارية ويستكمل التنظيف بكفاءة.
-
-            <br><br>
-
-            هذا الروبوت مثالي للمنازل العصرية، حيث يجمع بين الأداء القوي والتشغيل الذكي لتوفير وقتك وجهدك، مع تصميم مناسب لتنظيف مختلف أنواع الأرضيات بسهولة وهدوء.
-
-        </div>
-
-        <div class="features">
-
-            <h2>مميزات المنتج:</h2>
-
-            <ul>
-                <li>كنس ومسح في جهاز واحد.</li>
-                <li>قوة شفط قوية 6000PA.</li>
-                <li>مناسب لشعر الحيوانات الأليفة.</li>
-                <li>تحكم عبر WiFi وتطبيق الهاتف.</li>
-                <li>دعم الأوامر الصوتية.</li>
-                <li>شحن تلقائي وعودة ذكية إلى القاعدة.</li>
-                <li>تنظيف عملي وفعال للاستخدام اليومي.</li>
-            </ul>
-
-        </div>
-
-        <div class="short-box">
-
-            <strong>وصف قصير للبيع:</strong>
-
-            <br><br>
-
-            روبوت تنظيف ذكي 2 في 1 بقدرة شفط 6000PA، مع كنس ومسح، تحكم WiFi وصوتي، وإعادة شحن تلقائية، مثالي لتنظيف المنزل وشعر الحيوانات الأليفة بكفاءة عالية.
-
-        </div>
-
-        <div class="buy-section">
-
-            <a class="buy-btn"
-               href="https://s.click.aliexpress.com/e/_c3ATpk6R"
-               target="_blank">
-
-               شراء الآن
-
-            </a>
-
-        </div>
-
-    </div>
-
-    <div class="footer">
-        © 2026 جميع الحقوق محفوظة
-    </div>
-
-</div>
-
-</body>
-</html>
-<h2>المقالات</h2>
-<a href="smart-home.html">أفضل منتجات المنزل الذكي</a>
 .article{
 background:rgba(255,255,255,0.05);
 padding:30px;
@@ -478,10 +297,10 @@ font-size:34px;
 <div class="logo">HQCharge</div>
 
 <nav>
-<a href="#products">Products</a>
-<a href="#blog">Blog</a>
-<a href="#dashboard">Dashboard</a>
-<a href="#contact">Contact</a>
+<a href="#products">المنتجات</a>
+<a href="#blog">المقالات</a>
+<a href="#dashboard">لوحة التحكم</a>
+<a href="#contact">اتصل</a>
 </nav>
 
 </header>
@@ -504,300 +323,7 @@ font-size:34px;
 <a href="#blog" class="btn">
 قراءة المقالات
 </a>
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<title>أفضل أجهزة المنزل الذكي 2026 | Smart Home Devices Guide & Reviews</title>
-
-<meta name="description" content="تعرف على أفضل أجهزة المنزل الذكي 2026: الكاميرات الذكية، الأقفال، Google Nest، Amazon Echo والمكانس الروبوتية. دليل شامل مع روابط شراء ومراجعات.">
-<meta name="keywords" content="أفضل أجهزة المنزل الذكي 2026, smart home devices, smart camera, smart lock, robot vacuum, Google Nest, Amazon Echo">
-<link rel="canonical" href="https://your-domain.com/smart-home-2026.html">
-
-<meta property="og:type" content="article">
-<meta property="og:title" content="أفضل أجهزة المنزل الذكي 2026">
-<meta property="og:description" content="دليل شامل لأفضل أجهزة المنزل الذكي مع روابط شراء ومراجعات احترافية.">
-<meta property="og:image" content="https://picsum.photos/1200/630?smart-home">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "أفضل أجهزة المنزل الذكي 2026",
-  "author": {
-    "@type": "Person",
-    "name": "Smart Guide"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Smart Guide"
-  }
-}
-</script>
-
-<style>
-body{
-  margin:0;
-  font-family:Tahoma,Arial;
-  background:#0b1220;
-  color:#eef4ff;
-  line-height:1.8;
-}
-
-.container{
-  width:min(900px,95%);
-  margin:auto;
-}
-
-.section{
-  background:#121a2b;
-  padding:20px;
-  margin:20px 0;
-  border-radius:14px;
-  border:1px solid rgba(255,255,255,0.08);
-}
-
-h1,h2{margin:10px 0;}
-
-.btn{
-  display:inline-block;
-  margin-top:10px;
-  padding:12px 18px;
-  border-radius:999px;
-  background:#4fd1c5;
-  color:#071019;
-  text-decoration:none;
-  font-weight:bold;
-  transition:0.3s;
-}
-
-.btn:hover{
-  background:#22b8aa;
-  transform:scale(1.05);
-}
-
-.small{color:#b8c3d9;font-size:14px;}
-</style>
-</head>
-
-<body>
-
-<div class="container">
-
-<h1>🏠 أفضل أجهزة المنزل الذكي 2026</h1>
-<p class="small">
-Smart Home Devices Guide for Security, Comfort & Automation
-</p>
-
-<h2>🔥 الأكثر بحثًا في 2026</h2>
-<ul>
-<li>smart home devices 2026</li>
-<li>smart security camera</li>
-<li>smart lock</li>
-<li>robot vacuum cleaner</li>
-</ul>
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>روبوت تنظيف ذكي 2 في 1</title>
-
-<style>
-body{
-    font-family: Tahoma, Arial;
-    background:#f5f7fa;
-    margin:0;
-    padding:0;
-    color:#222;
-    line-height:1.9;
-}
-
-.container{
-    max-width:900px;
-    margin:40px auto;
-    background:#fff;
-    padding:30px;
-    border-radius:18px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
-}
-
-h1{
-    color:#0b5ed7;
-    font-size:38px;
-    margin-bottom:20px;
-}
-
-.image-box img{
-    width:100%;
-    border-radius:15px;
-}
-
-.description{
-    font-size:20px;
-    margin-top:25px;
-}
-
-.features{
-    margin-top:30px;
-    background:#f1f6ff;
-    padding:20px;
-    border-radius:15px;
-}
-
-.features h2{
-    color:#0b5ed7;
-}
-
-.features ul{
-    padding-right:20px;
-}
-
-.features li{
-    margin-bottom:12px;
-    font-size:18px;
-}
-
-.buy-box{
-    margin-top:35px;
-    text-align:center;
-}
-
-.buy-btn{
-    display:inline-block;
-    background:#0b5ed7;
-    color:#fff;
-    padding:16px 35px;
-    font-size:22px;
-    border-radius:12px;
-    text-decoration:none;
-    transition:0.3s;
-}
-
-.buy-btn:hover{
-    background:#084298;
-}
-
-.short-desc{
-    margin-top:30px;
-    background:#fafafa;
-    padding:20px;
-    border-radius:12px;
-    border:1px solid #eee;
-}
-
-</style>
-</head>
-
-<body>
-
-<div class="container">
-
-    <h1>روبوت تنظيف ذكي 2 في 1 بقدرة شفط 6000PA</h1>
-
-    <div class="image-box">
-        <img src="ضع-رابط-الصورة-هنا.jpg" alt="روبوت تنظيف ذكي">
-    </div>
-
-    <div class="description">
-        روبوت تنظيف ذكي 2 في 1 مع كنس ومسح، بقوة شفط تصل إلى 6000PA لتنظيف عميق وفعّال للأتربة، الغبار، وشعر الحيوانات الأليفة.
-        يتميز بتقنية WiFi والتحكم الصوتي لسهولة الاستخدام، مع خاصية إعادة الشحن التلقائي ليعود إلى القاعدة عند انخفاض البطارية ويستكمل التنظيف بكفاءة.
-        <br><br>
-        هذا الروبوت مثالي للمنازل العصرية، حيث يجمع بين الأداء القوي والتشغيل الذكي لتوفير وقتك وجهدك، مع تصميم مناسب لتنظيف مختلف أنواع الأرضيات بسهولة وهدوء.
-    </div>
-
-    <div class="features">
-        <h2>مميزات المنتج:</h2>
-
-        <ul>
-            <li>كنس ومسح في جهاز واحد.</li>
-            <li>قوة شفط قوية 6000PA.</li>
-            <li>مناسب لشعر الحيوانات الأليفة.</li>
-            <li>تحكم عبر WiFi وتطبيق الهاتف.</li>
-            <li>دعم الأوامر الصوتية.</li>
-            <li>شحن تلقائي وعودة ذكية إلى القاعدة.</li>
-            <li>تنظيف عملي وفعال للاستخدام اليومي.</li>
-        </ul>
-    </div>
-
-    <div class="short-desc">
-        <strong>وصف قصير للبيع:</strong><br>
-        روبوت تنظيف ذكي 2 في 1 بقدرة شفط 6000PA، مع كنس ومسح، تحكم WiFi وصوتي، وإعادة شحن تلقائية، مثالي لتنظيف المنزل وشعر الحيوانات الأليفة بكفاءة عالية.
-    </div>
-
-    <div class="buy-box">
-        <a class="buy-btn" href="ضع-رابط-المنتج-هنا" target="_blank">
-            شراء الآن
-        </a>
-    </div>
-
-</div>
-
-</body>
-</html>
-<div class="section">
-<h2>🏆 أفضل اختيار (Best Pick)</h2>
-<p>Google Nest Hub هو أفضل بداية للمنزل الذكي</p>
-<a class="btn" target="_blank" href="https://www.amazon.com/s?k=google+nest+hub">
-🔥 اشترِ الآن
-</a>
-</div>
-
-<div class="section">
-<h2>📷 الكاميرات الذكية</h2>
-<a class="btn" target="_blank" href="https://www.amazon.com/s?k=smart+security+camera">
-عرض الكاميرات
-</a>
-</div>
-
-<div class="section">
-<h2>🔐 الأقفال الذكية</h2>
-<a class="btn" target="_blank" href="https://www.amazon.com/s?k=smart+lock">
-عرض الأقفال
-</a>
-</div>
-
-<div class="section">
-<h2>🎤 المساعدات الذكية</h2>
-<a class="btn" target="_blank" href="https://www.amazon.com/s?k=amazon+echo">
-Amazon Echo
-</a>
-<a class="btn" target="_blank" href="https://www.amazon.com/s?k=google+nest+hub">
-Google Nest
-</a>
-</div>
-
-<div class="section">
-<h2>🤖 المكانس الروبوتية</h2>
-<a class="btn" target="_blank" href="https://www.amazon.com/s?k=robot+vacuum+cleaner">
-عرض المكانس
-</a>
-</div>
-
-<div class="section">
-<h2>🌡️ الثرموستات الذكي</h2>
-<a class="btn" target="_blank" href="https://www.amazon.com/s?k=smart+thermostat">
-عرض الثرموستات
-</a>
-</div>
-
-<div class="section">
-<h2>🚀 الخلاصة</h2>
-<p class="small">
-اختر جهازًا واحدًا وابدأ بناء منزلك الذكي تدريجيًا لتحقيق أفضل تجربة.
-</p>
-
-<a class="btn" target="_blank" href="https://www.amazon.com/s?k=smart+home+devices">
-تصفح كل الأجهزة
-</a>
-</div>
-
-</div>
-
-</body>
-</html>
 </div>
 
 </section>
@@ -805,46 +331,70 @@ Google Nest
 <section class="section" id="products">
 
 <h2 class="section-title">
-Trending Products
+روبوت تنظيف ذكي 6000PA
 </h2>
+
+<p class="section-desc">
+اكتشف أفضل روبوت تنظيف ذكي يدعم الشفط القوي، إعادة الشحن التلقائية والتحكم عبر الهاتف والتطبيقات الصوتية. مثالي للمنزل مع الحيوانات الأليفة والأرضيات الصلبة والسجاد.
+</p>
 
 <div class="products">
 
 <div class="card">
 
-<p>
-</p>
+<img src="https://images.unsplash.com/photo-1602526211221-4d4d51d93521?auto=format&fit=crop&w=1200&q=80">
 
-<a class="buy-btn"
-href="https://portals.aliexpress.com"
-target="_blank">
-AliExpress Deal
-</a>
+<div class="card-content">
+
+<h3>قاعدة شحن تلقائية</h3>
+
+<p>
+يعود الروبوت تلقائيًا لقاعدة الشحن عند انخفاض البطارية ثم يستأنف التنظيف بعد الشحن.
+</p>
 
 </div>
 </div>
 
 <div class="card">
 
-<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1200&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1602526211221-877f0d56d309?auto=format&fit=crop&w=1200&q=80">
 
 <div class="card-content">
 
-<h3>Wireless Headphones</h3>
+<h3>تحكم ذكي عبر الواي فاي</h3>
 
 <p>
-سماعات احترافية بتقنيات AI.
+يمكنك تشغيل الروبوت ومتابعة جدول التنظيف عبر التطبيق أو الأوامر الصوتية.
 </p>
 
-<a class="buy-btn"
-href="https://www.shopify.com/affiliates"
-target="_blank">
-Shopify Offers
-</a>
+</div>
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1598336490574-37dd6817a059?auto=format&fit=crop&w=1200&q=80">
+
+<div class="card-content">
+
+<h3>تنظيف آمن للحيوانات الأليفة</h3>
+
+<p>
+مثالي لمسح شعر القطط والكلاب والأوساخ اليومية مع أداء هادئ ومستقر.
+</p>
 
 </div>
 </div>
 
+</div>
+
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1542318424-407a12ad8aeb?auto=format&fit=crop&w=1200&q=80" alt="روبوت تنظيف ذكي في المنزل">
+<img src="https://images.unsplash.com/photo-1512499617640-c2f999b5a826?auto=format&fit=crop&w=1200&q=80" alt="التحكم عبر التطبيق">
+<img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=1200&q=80" alt="قاعدة شحن آلية">
+</div>
+
+<div style="text-align:center; margin-top:40px;">
+<a class="btn" href="https://s.click.aliexpress.com/e/_c3pVkUYL" target="_blank">اشترِ الآن</a>
 </div>
 
 </section>
@@ -852,8 +402,12 @@ Shopify Offers
 <section class="section" id="blog">
 
 <h2 class="section-title">
-SEO Blog Articles
+مقالات شحن احترافية
 </h2>
+
+<p class="section-desc">
+اكتشف أهم دلائل الشحن من الصين إلى الجزائر والسعودية والإمارات مع نصائح عملية لاختيار أفضل خطوط الشحن والجمارك.
+</p>
 
 <div class="blog">
 
@@ -1023,7 +577,9 @@ Contact
 
 <div class="contact">
 
-<p>Email: contact@hqcharge.com</p>
+<p>Email: info@hqcharge.com</p>
+
+<p>WhatsApp: <a href="https://wa.me/213663633526" style="color:#00d0ff; text-decoration:none;">+213 663 633 526</a></p>
 
 <p>Website: hqcharge.com</p>
 
